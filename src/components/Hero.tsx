@@ -42,7 +42,7 @@ export default function Hero() {
             textShadow: "2px 2px 0 #C41E3A, 4px 4px 0 rgba(196, 30, 58, 0.3)",
           }}
         >
-          Chez Talaat
+          Chez Taalat
         </h1>
 
         <div className="flex items-center justify-center gap-4 mb-6 animate-fade-in-up-delay-3">
