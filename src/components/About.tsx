@@ -55,7 +55,7 @@ export default function About() {
           </div>
           <div className="absolute bottom-0 right-0 w-[55%] h-[55%] border-[3px] border-primary-red shadow-2xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500&q=80"
+              src="/images/taalat.jpg"
               alt="Chef Talaat"
               fill
               className="object-cover"

@@ -36,7 +36,7 @@ export default function Navbar() {
       >
         {/* Left side (desktop info only) */}
         <div className="hidden md:flex gap-8 font-montserrat text-xs tracking-widest uppercase">
-          <span className="opacity-80">Lun-Dim: 8h-23h</span>
+          <span className="opacity-80">Lun-Dim: 24h/24h </span>
           <span className="opacity-80">2 Plateaux, Abidjan</span>
         </div>
 

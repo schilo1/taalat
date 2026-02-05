@@ -8,7 +8,6 @@ export default function Hero() {
       <div className="absolute inset-0">
         <video
           autoPlay
-          muted
           loop
           playsInline
           preload="metadata"
@@ -45,7 +44,7 @@ export default function Hero() {
           Chez Taalat
         </h1>
 
-        <div className="flex items-center justify-center gap-4 mb-6 animate-fade-in-up-delay-3">
+        {/* <div className="flex items-center justify-center gap-4 mb-6 animate-fade-in-up-delay-3">
           <div className="w-16 h-px bg-gold/50" />
           <span className="font-montserrat text-sm tracking-[6px] uppercase text-white">
             Restaurant Mirador
@@ -55,7 +54,7 @@ export default function Hero() {
 
         <p className="font-cormorant text-xl italic text-cream/90 mb-10 animate-fade-in-up-delay-4">
           Une expérience culinaire inoubliable au cœur d&apos;Abidjan
-        </p>
+        </p> */}
 
         <a
           href="#menu"
