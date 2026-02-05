@@ -330,7 +330,7 @@ Merci de confirmer ma commande ! 🙏`;
             <p className="text-lg text-white">
               Lundi - Dimanche
               <br />
-              8h00 - 22h00
+              24h/24h
             </p>
           </div>
 
@@ -339,7 +339,7 @@ Merci de confirmer ma commande ! 🙏`;
               Notre Adresse
             </h4>
             <p className="text-lg text-white mb-4">
-              Chez Talaat - 2 Plateaux
+              Chez Taalat - 2 Plateaux
               <br />
               Abidjan, Côte d&apos;Ivoire
             </p>
@@ -354,7 +354,7 @@ Merci de confirmer ma commande ! 🙏`;
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Chez Talaat - Google Maps"
+                title="Chez Taalat - Google Maps"
               />
             </div>
 

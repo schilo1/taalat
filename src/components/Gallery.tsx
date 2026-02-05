@@ -68,7 +68,7 @@ export default function Gallery() {
           Instagram
         </div>
         <h2 className="font-playfair text-4xl md:text-5xl font-normal text-white">
-          @ChezTalaat
+          @ChezTaalat
         </h2>
       </div>
 

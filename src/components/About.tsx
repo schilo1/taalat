@@ -66,10 +66,10 @@ export default function About() {
         {/* Text Content */}
         <div className="fade-in">
           <h3 className="font-parisienne text-5xl md:text-6xl text-primary-red mb-6">
-            Talaat
+            Taalat
           </h3>
           <p className="text-lg md:text-xl leading-relaxed text-cream/85 mb-6">
-            Bienvenue chez Talaat, où chaque plat raconte une histoire de
+            Bienvenue chez Taalat, où chaque plat raconte une histoire de
             passion et de tradition orientale. Niché au Boulevard Latrille à
             Abidjan, notre restaurant vous invite à découvrir une cuisine
             libanaise authentique, riche en saveurs, mêlant mezzés
@@ -90,7 +90,7 @@ export default function About() {
             </div>
             <div>
               <h4 className="font-playfair text-xl text-white mb-1">
-                Chef Talaat
+                Chef Taalat
               </h4>
               <span className="font-montserrat text-xs tracking-widest uppercase text-gold">
                 Chef Exécutif & Fondateur
