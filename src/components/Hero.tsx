@@ -26,7 +26,7 @@ export default function Hero() {
           playsInline
           preload="auto"
           poster="https://res.cloudinary.com/dzhkssyry/video/upload/v1770388264/Taalat_uttzy9.jpg"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain md:object-cover"
         >
           <source
             src="https://res.cloudinary.com/dzhkssyry/video/upload/v1770388264/Taalat_uttzy9.mp4"
