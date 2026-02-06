@@ -15,7 +15,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="h-screen relative flex items-center justify-center overflow-hidden bg-warm-black">
+    <section className="min-h-[85vh] md:h-screen relative flex items-center justify-center overflow-hidden bg-warm-black">
       {/* Video Background */}
       <div className="absolute inset-0 flex items-center justify-center">
         <video
@@ -26,7 +26,7 @@ export default function Hero() {
           playsInline
           preload="auto"
           poster="https://res.cloudinary.com/dzhkssyry/video/upload/v1770388264/Taalat_uttzy9.jpg"
-          className="w-full h-full object-contain md:object-cover"
+          className="w-[95%] h-[75%] md:w-full md:h-full object-contain md:object-cover"
         >
           <source
             src="https://res.cloudinary.com/dzhkssyry/video/upload/v1770388264/Taalat_uttzy9.mp4"
@@ -66,10 +66,10 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Bouton Son - Coin inférieur droit */}
+      {/* Bouton Son - Positioned higher on mobile */}
       <button
         onClick={toggleMute}
-        className="absolute bottom-6 right-4 md:bottom-8 md:right-8 z-20 p-2.5 md:p-3 bg-warm-black/50 hover:bg-warm-black/80 border border-gold/40 text-gold transition-all duration-300 group backdrop-blur-sm"
+        className="absolute bottom-16 right-4 md:bottom-8 md:right-8 z-20 p-2.5 md:p-3 bg-warm-black/50 hover:bg-warm-black/80 border border-gold/40 text-gold transition-all duration-300 group backdrop-blur-sm"
         aria-label={isMuted ? "Activer le son" : "Couper le son"}
       >
         {isMuted ? (
