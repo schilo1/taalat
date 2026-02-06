@@ -1,21 +1,35 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
+
+import { useState, useRef } from "react";
+import { Volume2, VolumeX } from "lucide-react";
 
 export default function Hero() {
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <section className="h-screen relative flex items-center justify-center overflow-hidden">
-      {/* Video Background - Plus visible */}
+      {/* Video Background */}
       <div className="absolute inset-0">
         <video
+          ref={videoRef}
           autoPlay
           loop
+          muted
           playsInline
-          preload="metadata"
-          poster="https://res.cloudinary.com/dzhkssyry/video/upload/so_1,f_jpg,q_auto/movie_wflalr.jpg"
-          className="w-full h-full object-contain md:object-cover"
+          preload="auto"
+          poster="https://res.cloudinary.com/dzhkssyry/video/upload/v1770388264/Taalat_uttzy9.jpg"
+          className="w-full h-full object-cover"
         >
           <source
-            src="https://res.cloudinary.com/dzhkssyry/video/upload/q_auto:good,vc_h264,ac_aac/movie_wflalr.mp4"
+            src="https://res.cloudinary.com/dzhkssyry/video/upload/v1770388264/Taalat_uttzy9.mp4"
             type="video/mp4"
           />
         </video>
@@ -44,18 +58,6 @@ export default function Hero() {
           Chez Taalat
         </h1>
 
-        {/* <div className="flex items-center justify-center gap-4 mb-6 animate-fade-in-up-delay-3">
-          <div className="w-16 h-px bg-gold/50" />
-          <span className="font-montserrat text-sm tracking-[6px] uppercase text-white">
-            Restaurant Mirador
-          </span>
-          <div className="w-16 h-px bg-gold/50" />
-        </div>
-
-        <p className="font-cormorant text-xl italic text-cream/90 mb-10 animate-fade-in-up-delay-4">
-          Une expérience culinaire inoubliable au cœur d&apos;Abidjan
-        </p> */}
-
         <a
           href="#menu"
           className="inline-block font-montserrat text-xs tracking-[3px] uppercase px-10 py-4 bg-primary-red text-white hover:bg-white hover:text-primary-red transition-all duration-300 animate-fade-in-up-delay-5"
@@ -64,8 +66,21 @@ export default function Hero() {
         </a>
       </div>
 
+      {/* Bouton Son - Coin inférieur droit */}
+      <button
+        onClick={toggleMute}
+        className="absolute bottom-6 right-4 md:bottom-8 md:right-8 z-20 p-2.5 md:p-3 bg-warm-black/50 hover:bg-warm-black/80 border border-gold/40 text-gold transition-all duration-300 group backdrop-blur-sm"
+        aria-label={isMuted ? "Activer le son" : "Couper le son"}
+      >
+        {isMuted ? (
+          <VolumeX className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform" />
+        ) : (
+          <Volume2 className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform" />
+        )}
+      </button>
+
       {/* Bottom Gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-warm-black to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-warm-black to-transparent pointer-events-none" />
     </section>
   );
 }

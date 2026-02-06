@@ -47,7 +47,7 @@ export default function About() {
         <div className="relative h-[400px] lg:h-[600px] fade-in">
           <div className="absolute top-0 left-0 w-[70%] h-[70%] shadow-2xl overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80"
+              src="/images/enface.png"
               alt="Restaurant intérieur"
               fill
               className="object-cover"
@@ -55,7 +55,7 @@ export default function About() {
           </div>
           <div className="absolute bottom-0 right-0 w-[55%] h-[55%] border-[3px] border-primary-red shadow-2xl overflow-hidden">
             <Image
-              src="/images/taalat.jpg"
+              src="/images/MonsieurT.png"
               alt="Chef Talaat"
               fill
               className="object-cover"
