@@ -45,7 +45,7 @@ export default function Hero() {
       <div className="text-center z-10 px-4">
         <div className="inline-block border border-gold/40 px-6 py-2 mb-8 animate-fade-in-up-delay-1">
           <span className="font-montserrat text-xs tracking-[4px] uppercase text-gold">
-            Établi depuis 2010
+            Établi depuis 2001
           </span>
         </div>
 
